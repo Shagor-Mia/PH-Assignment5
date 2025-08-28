@@ -4,12 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- nav section -->
-    <section class="nav">Navbar</section>
+    <section
+      class="nav flex flex-wrap md:flex-nowrap w-full max-w-[1120px] mx-auto justify-between items-center py-6 px-4 md:px-16 shadow-[0_1px_50px_0_rgba(181,181,181,0.25)]"
+    >
+      <!-- left div -->
+      <div class="flex items-center gap-2">
+        <img src="./assets/logo.png" class="h-13 w-13" alt="logo" />
+        <h1
+          class="text-xl md:text-2xl font-extrabold text-[#006747] leading-tight"
+        >
+          Emergency <br />
+          Service
+        </h1>
+      </div>
+
+      <!-- right div -->
+      <div class="flex flex-wrap gap-3 md:gap-5 mt-4 md:mt-0">
+        <div
+          class="flex gap-1 bg-[#41ff6b1a] flex-1 min-w-[100px] items-center justify-center h-12 rounded-3xl font-['Inter']"
+        >
+          <p class="font-bold">0</p>
+          <img src="assets/heart.png" class="h-7 w-7" alt="" />
+        </div>
+        <div
+          class="flex gap-1 bg-[#41ff6b1a] flex-1 min-w-[100px] items-center justify-center h-12 rounded-3xl font-['Inter']"
+        >
+          <p class="font-bold">0</p>
+          <img src="assets/coin.png" class="h-7 w-7" alt="" />
+        </div>
+        <div
+          class="flex bg-[#00A63E] flex-1 min-w-[100px] items-center justify-center h-12 rounded-3xl font-['Inter']"
+        >
+          <p class="text-white"><span>0</span> Copy</p>
+        </div>
+      </div>
+    </section>
+
     <!-- banner section -->
-    <section class="banner">Banner</section>
+    <section
+      class="banner bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex flex-col items-center justify-center text-white px-4 gap-2 py-3 flex-1 text-center"
+    >
+      <img
+        src="assets/logo-dark.png"
+        class="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24"
+        alt=""
+      />
+      <h1 class="text-2xl font-['Hind_Madurai'] md:text-4xl font-bold">
+        Emergency Service Directory
+      </h1>
+      <p class="text-xs md:text-xl font-['Hind_Madurai']">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </section>
     <!-- Main section -->
     <section class="main">
       Main
