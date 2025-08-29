@@ -10,10 +10,22 @@ for (const heart of AllHeart) {
 }
 
 // copy button
-const AllCpy = document.querySelectorAll("cpyBtn");
+const AllCpy = document.querySelectorAll(".cpyBtn");
 for (const btn of AllCpy) {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
+    const card = btn.closest(".card");
+
+    const number = card.querySelector(".num").innerText;
+    if (number) {
+      navigator.clipboard.writeText(number);
+      alert(`Copied number ${number} to clipboard!`);
+    } else {
+      console.error("Failed to copy!");
+    }
+
+    const copy = document.getElementById("copy");
+    copy.innerText = parseInt(copy.innerText) + 1;
   });
 }
 // call button
